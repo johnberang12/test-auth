@@ -1,13 +1,13 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'firebase_options.dart';
+import 'fire_options.dart';
 
 class FirebaseInitilizer {
   FirebaseInitilizer();
   Future<void> _init() async {
     await Firebase.initializeApp(
-        options: TestAuthFirebaseOptions.currentPlatform);
+        options: DefaultFirebaseOptions.currentPlatform);
   }
 }
 
